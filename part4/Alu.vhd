@@ -2,14 +2,6 @@ library IEEE;
 use IEEE.STD_LOGIC_1164.ALL;
 use IEEE.NUMERIC_STD.ALL;
 
--- Spartan 3
---   Speed grade 4: ? MHz
---   Speed grade 5: ? MHz
--- Virtex 6
---   Speed grade 3: ? MHz
--- Zync
---   Speed grade 3: ? MHz
-
 -- Responsible for arithmetic and logic operations on 2 operands.
 entity Alu is
 port ( 
@@ -21,14 +13,14 @@ port (
 	i_op1:			in unsigned(7 downto 0);  -- Rd
 	i_op2:			in unsigned(7 downto 0);  -- Rr
 	o_result:		out unsigned(7 downto 0);
-	--
+	--flags inputs
 	i_halfcarry:	in std_logic;
 	i_sign:			in std_logic;
 	i_overflow:		in std_logic;
 	i_negative:		in std_logic;
 	i_zero:			in std_logic;
 	i_carry:			in std_logic;
-	--
+	--flags outputs
 	o_halfcarry:	out std_logic;	-- unsigned
 	o_sign:			out std_logic;	-- 2's complement
 	o_overflow:		out std_logic; -- 2's complement
