@@ -8,7 +8,7 @@ port (
 	i_clk:			in std_logic;
 	i_reset:			in std_logic;
 	-- control path
-	i_operation:	in unsigned(3 downto 0);
+	i_operation:	in unsigned(3 downto 0); --operation code for alu, 4 bits
 	-- data path
 	i_op1:			in unsigned(7 downto 0);  -- Rd
 	i_op2:			in unsigned(7 downto 0);  -- Rr
