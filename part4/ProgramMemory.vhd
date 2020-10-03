@@ -3,6 +3,8 @@ use IEEE.STD_LOGIC_1164.ALL;
 use IEEE.NUMERIC_STD.ALL;
 
 -- Contains the program instructions
+-- Provides instruction from <i_addr> address on <o_data> port at 
+-- the rising edge of <i_clk>
 entity ProgramMemory is
 port ( 
 	i_clk:			in std_logic;
