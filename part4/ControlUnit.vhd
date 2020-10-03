@@ -2,6 +2,8 @@ library IEEE;
 use IEEE.STD_LOGIC_1164.ALL;
 use IEEE.NUMERIC_STD.ALL;
 
+
+--Managing ALU
 entity ControlUnit is
 port ( 
 	i_clk:			in std_logic;
