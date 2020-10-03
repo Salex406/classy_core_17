@@ -11,7 +11,7 @@ port (
 	-- FSM inputs
 	i_IR:				in unsigned(15 downto 0);
 	i_ALU_Z:			in std_logic;
-	-- control path outputs
+	-- control path outputs (will connect to CtrlFetch block)
 	o_reset:			out std_logic;
 	o_mode12K:		out std_logic_vector(1 downto 0);
 	o_modeAddZA:	out std_logic_vector(1 downto 0);
